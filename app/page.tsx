@@ -1,319 +1,301 @@
 "use client"
 
-import React, { useState } from "react"
-import { AnimatedShaderHero } from "@/components/ui/animated-shader-hero"
-import { SplineScene } from "@/components/ui/spline-scene"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { SpotlightIbelick } from "@/components/ui/spotlight-ibelick"
-import { MagnetizeButton } from "@/components/ui/magnetize-button"
-import { Button } from "@/components/ui/button"
-import {
-  Briefcase,
-  Brain,
-  Sparkles,
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-  Code2,
-  Zap,
-} from "lucide-react"
+import React from "react"
+import { IntroOverlay } from "@/components/intro-overlay"
+import { TickerBar } from "@/components/ticker-bar"
+import { ProfilePanel } from "@/components/profile-panel"
+import { WorkPanel } from "@/components/work-panel"
+import { ProjectsPanel } from "@/components/projects-panel"
+import { ResumePanel } from "@/components/resume-panel"
+import { motion } from "framer-motion"
 
 export default function Home() {
-  const [scrolledToSection, setScrolledToSection] = useState("")
+  const handleNavigate = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
-    <main className="w-full bg-black">
-      {/* NAVIGATION */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="text-2xl font-bold bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent">
-              DG
+    <main className="w-full min-h-screen bg-black">
+      {/* Intro overlay */}
+      <IntroOverlay
+        onComplete={() => {}}
+        duration={2000}
+      />
+
+      {/* Ticker bar */}
+      <TickerBar onNavigate={handleNavigate} />
+
+      {/* Main content with top padding for ticker */}
+      <div className="pt-16">
+        {/* HOME SECTION */}
+        <section
+          id="home"
+          className="min-h-screen flex items-center justify-center px-4 py-16"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-center space-y-6 max-w-2xl"
+          >
+            <h1 className="text-5xl md:text-6xl font-mono font-bold text-transparent bg-gradient-to-r from-lime-400 via-emerald-400 to-lime-300 bg-clip-text">
+              DOMINIK GIELAROWIEC
+            </h1>
+            <p className="text-lime-400/70 font-mono text-lg">
+              CS + Economics Student · AI & FinTech Builder
+            </p>
+            <p className="text-white/60 font-mono text-sm leading-relaxed">
+              Welcome to my trading terminal. Explore my experience, projects,
+              and capabilities. Use the ticker navigation to jump between
+              sections.
+            </p>
+            <div className="pt-8 flex justify-center gap-4">
+              <button
+                onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+                className="px-6 py-3 bg-lime-500 text-black font-mono font-bold uppercase tracking-widest rounded hover:shadow-lg hover:shadow-lime-500/50 transition-all"
+              >
+                Start Exploring
+              </button>
             </div>
-            <div className="hidden md:flex gap-8">
-              {["Home", "About", "Work", "Contact"].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-white/70 hover:text-white transition-colors"
-                >
-                  {item}
-                </a>
-              ))}
+          </motion.div>
+        </section>
+
+        {/* ABOUT SECTION - PANELS GRID */}
+        <section
+          id="about"
+          className="min-h-screen flex items-center justify-center px-4 py-20"
+        >
+          <div className="w-full max-w-6xl">
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-5xl font-mono font-bold text-lime-400 mb-12 text-center uppercase tracking-wider"
+            >
+              TERMINAL DASHBOARD
+            </motion.h2>
+
+            {/* Grid layout: 2 columns on desktop */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              <ProfilePanel />
+              <WorkPanel />
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 mt-8">
+              <ProjectsPanel />
+              <ResumePanel />
             </div>
           </div>
-        </div>
-      </nav>
+        </section>
 
-      {/* HERO SECTION */}
-      <section id="home" className="w-full">
-        <AnimatedShaderHero
-          trustBadge={{
-            text: "Trusted by builders and creators.",
-            icons: ["🚀"],
-          }}
-          headline={{
-            line1: "Building at the",
-            line2: "Edge of AI & Finance",
-          }}
-          subtitle="UMass Amherst CS + Economics student. Cornerstone Bank experience. Passionate about AI, fintech, and crafting products that shape the future. Let's build something extraordinary."
-          buttons={{
-            primary: {
-              text: "View My Work",
-              onClick: () =>
-                document
-                  .getElementById("work")
-                  ?.scrollIntoView({ behavior: "smooth" }),
-            },
-            secondary: {
-              text: "Contact Me",
-              onClick: () =>
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" }),
-            },
-          }}
-        />
-      </section>
+        {/* WORK SECTION */}
+        <section
+          id="work"
+          className="min-h-screen flex items-center justify-center px-4 py-20"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="w-full max-w-4xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-mono font-bold text-lime-400 mb-12 text-center uppercase tracking-wider">
+              EMPLOYMENT TIMELINE
+            </h2>
 
-      {/* ABOUT SECTION */}
-      <section id="about" className="w-full py-24 px-4 bg-black">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-            About Me
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {/* Card 1: Education */}
-            <Card className="relative overflow-hidden group border-white/10 bg-white/5 hover:bg-white/10 transition-all">
-              <SpotlightIbelick fill="rgba(168, 85, 247, 0.3)" />
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Brain className="w-5 h-5 text-violet-400" />
-                  <CardTitle className="text-xl">Education</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="text-white/70">
-                <p className="text-sm leading-relaxed">
-                  <strong>UMass Amherst</strong>
-                  <br />
-                  Double Major: Computer Science & Economics
-                  <br />
-                  <span className="text-xs text-white/50 mt-2 block">
-                    Focused on systems, algorithms, and financial markets
-                  </span>
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 2: Professional Experience */}
-            <Card className="relative overflow-hidden group border-white/10 bg-white/5 hover:bg-white/10 transition-all">
-              <SpotlightIbelick fill="rgba(168, 85, 247, 0.3)" />
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Briefcase className="w-5 h-5 text-violet-400" />
-                  <CardTitle className="text-xl">Experience</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="text-white/70">
-                <p className="text-sm leading-relaxed">
-                  <strong>Cornerstone Bank</strong> (~$6B regional institution)
-                  <br />
-                  Bank Teller Associate/Intern
-                  <br />
-                  <span className="text-xs text-white/50 mt-2 block">
-                    High-touch customer service, transactions, and financial
-                    operations
-                  </span>
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 3: Interests */}
-            <Card className="relative overflow-hidden group border-white/10 bg-white/5 hover:bg-white/10 transition-all">
-              <SpotlightIbelick fill="rgba(168, 85, 247, 0.3)" />
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Sparkles className="w-5 h-5 text-violet-400" />
-                  <CardTitle className="text-xl">Passions</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="text-white/70">
-                <p className="text-sm leading-relaxed">
-                  AI, machine learning, fintech, product building
-                  <br />
-                  <span className="text-xs text-white/50 mt-2 block">
-                    Hackathons, side projects, and shipping features that
-                    matter
-                  </span>
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Full-width about text */}
-          <Card className="relative overflow-hidden border-white/10 bg-white/5">
-            <SpotlightIbelick fill="rgba(168, 85, 247, 0.2)" />
-            <CardContent className="p-8">
-              <p className="text-white/80 leading-relaxed">
-                I'm a second-year student at UMass Amherst, double-majoring in
-                Computer Science and Economics. My academic journey has given me
-                a unique perspective on tech and finance — I understand both the
-                engineering complexity of building systems and the strategic
-                thinking behind markets and products.
-              </p>
-              <p className="text-white/80 leading-relaxed mt-4">
-                At Cornerstone Bank, I developed strong customer service skills
-                and gained exposure to real-world financial operations, handling
-                high volumes of transactions and customer interactions with
-                attention to detail and integrity.
-              </p>
-              <p className="text-white/80 leading-relaxed mt-4">
-                My real passion lies in the intersection of AI, finance, and
-                product development. I love experimenting with new technologies,
-                participating in hackathons, and building tools that solve
-                real problems. I'm career-driven and always seeking
-                opportunities to learn, collaborate, and make an impact.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* WORK / PROJECTS SECTION */}
-      <section id="work" className="w-full py-24 px-4 bg-gradient-to-b from-black to-black/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-            Projects & Experiments
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* 3D Spline Section */}
-            <Card className="relative overflow-hidden border-white/10 bg-white/5 h-96">
-              <SpotlightIbelick fill="rgba(168, 85, 247, 0.3)" />
-              <SplineScene
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                className="w-full h-full"
-              />
-            </Card>
-
-            {/* Projects Grid */}
-            <div className="space-y-6">
+            {/* Timeline */}
+            <div className="space-y-8">
               {[
                 {
-                  title: "AI-Powered Tools",
+                  year: "2023-2024",
+                  company: "Cornerstone Bank",
+                  role: "Bank Teller Associate",
                   description:
-                    "Exploring machine learning applications for productivity and automation.",
-                  tech: ["Python", "ML", "APIs"],
-                  icon: Brain,
+                    "Processed $2M+ in transactions, served 500+ customers with 99% accuracy. Developed strong customer service and attention to detail.",
                 },
                 {
-                  title: "HackUMass Projects",
+                  year: "2022-Present",
+                  company: "UMass Amherst",
+                  role: "CS + Economics Student",
                   description:
-                    "Rapid prototyping and full-stack development in fast-paced hackathon environments.",
-                  tech: ["React", "TypeScript", "Web3"],
-                  icon: Code2,
+                    "Double major with focus on system design, algorithms, and financial markets. 3.7+ GPA, active in hackathons.",
                 },
-                {
-                  title: "Finance Dashboards",
-                  description:
-                    "Real-time market data visualization and portfolio tracking tools.",
-                  tech: ["React", "D3.js", "APIs"],
-                  icon: Zap,
-                },
-              ].map((project, idx) => {
-                const Icon = project.icon
-                return (
-                  <Card
-                    key={idx}
-                    className="relative overflow-hidden group border-white/10 bg-white/5 hover:bg-white/10 transition-all cursor-pointer"
-                  >
-                    <SpotlightIbelick fill="rgba(168, 85, 247, 0.2)" />
-                    <CardContent className="p-6 relative z-10">
-                      <div className="flex items-start justify-between mb-3">
-                        <Icon className="w-5 h-5 text-violet-400" />
-                        <ExternalLink className="w-4 h-4 text-white/40 group-hover:text-white/70 transition-colors" />
-                      </div>
-                      <h3 className="text-lg font-semibold text-white mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-sm text-white/70 mb-4">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech, i) => (
-                          <span
-                            key={i}
-                            className="px-2 py-1 text-xs rounded-full bg-violet-500/20 text-violet-300 border border-violet-500/30"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                )
-              })}
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.2 }}
+                  className="border-l-2 border-lime-500/50 pl-6 py-4 hover:border-lime-500 transition-all"
+                >
+                  <div className="text-lime-400 font-mono text-sm font-bold uppercase">
+                    {item.year}
+                  </div>
+                  <h3 className="text-xl font-mono font-bold text-lime-300 mt-2">
+                    {item.role}
+                  </h3>
+                  <div className="text-lime-400/60 font-mono text-sm mt-1">
+                    @ {item.company}
+                  </div>
+                  <p className="text-white/60 text-sm mt-3">{item.description}</p>
+                </motion.div>
+              ))}
             </div>
-          </div>
-        </div>
-      </section>
+          </motion.div>
+        </section>
 
-      {/* CONTACT SECTION */}
-      <section id="contact" className="w-full py-24 px-4 bg-black">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h2>
-          <p className="text-white/70 mb-12 text-lg">
-            Whether you want to collaborate, have an opportunity, or just chat
-            about AI and finance, I'd love to hear from you.
+        {/* PROJECTS SECTION */}
+        <section
+          id="projects"
+          className="min-h-screen flex items-center justify-center px-4 py-20"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="w-full max-w-4xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-mono font-bold text-lime-400 mb-12 text-center uppercase tracking-wider">
+              PROJECT PORTFOLIO
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  name: "AI Assistant Platform",
+                  description:
+                    "LLM-powered productivity tool with real-time market analysis integration.",
+                  tech: ["Python", "LLM", "Next.js", "Finance APIs"],
+                  status: "active",
+                },
+                {
+                  name: "Finance Dashboard",
+                  description:
+                    "Real-time portfolio tracking and market visualization with data streaming.",
+                  tech: ["React", "TypeScript", "WebSocket", "D3.js"],
+                  status: "active",
+                },
+                {
+                  name: "Web3 Marketplace",
+                  description:
+                    "Decentralized marketplace with smart contract integration and wallet support.",
+                  tech: ["Solidity", "Web3.js", "React", "IPFS"],
+                  status: "completed",
+                },
+                {
+                  name: "Course Scheduler",
+                  description:
+                    "Full-stack scheduling app with conflict detection and optimization.",
+                  tech: ["Next.js", "PostgreSQL", "React", "Tailwind"],
+                  status: "active",
+                },
+              ].map((project, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="p-6 border border-lime-500/30 bg-black/50 rounded hover:border-lime-500/70 hover:shadow-lg hover:shadow-lime-500/20 transition-all"
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-lime-300 font-mono font-bold">
+                      {project.name}
+                    </h3>
+                    <span
+                      className={`text-xs font-mono uppercase px-2 py-1 rounded ${
+                        project.status === "active"
+                          ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                          : "bg-blue-500/20 text-blue-400 border border-blue-500/30"
+                      }`}
+                    >
+                      {project.status}
+                    </span>
+                  </div>
+                  <p className="text-white/60 text-sm mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 text-xs bg-lime-500/10 border border-lime-500/30 text-lime-300 rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </section>
+
+        {/* CONTACT SECTION */}
+        <section
+          id="contact"
+          className="min-h-screen flex items-center justify-center px-4 py-20"
+        >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-center space-y-8 max-w-2xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-mono font-bold text-lime-400 uppercase tracking-wider">
+              GET IN TOUCH
+            </h2>
+
+            <p className="text-white/60 font-mono text-sm leading-relaxed">
+              Interested in collaborating or discussing opportunities? Reach out
+              through any of these channels.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { label: "Email", value: "dom@example.com", href: "mailto:dom@example.com" },
+                { label: "LinkedIn", value: "linkedin.com/in/dominik", href: "https://linkedin.com" },
+                { label: "GitHub", value: "github.com/domgielar", href: "https://github.com" },
+              ].map((contact, idx) => (
+                <motion.a
+                  key={idx}
+                  href={contact.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  className="p-4 border border-lime-500/30 bg-black/50 rounded hover:border-lime-500/70 hover:shadow-lg hover:shadow-lime-500/20 transition-all"
+                >
+                  <div className="text-lime-400/60 text-xs uppercase">
+                    {contact.label}
+                  </div>
+                  <div className="text-lime-300 font-mono text-sm mt-2">
+                    {contact.value}
+                  </div>
+                </motion.a>
+              ))}
+            </div>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="px-8 py-4 bg-gradient-to-r from-lime-500 to-emerald-500 text-black font-mono font-bold uppercase tracking-widest rounded hover:shadow-lg hover:shadow-lime-500/50 transition-all"
+            >
+              Back to Top
+            </motion.button>
+          </motion.div>
+        </section>
+
+        {/* FOOTER */}
+        <footer className="w-full py-8 px-4 border-t border-lime-500/20 text-center text-lime-400/50 text-xs font-mono uppercase tracking-widest">
+          <p>
+            © {new Date().getFullYear()} Dominik Gielarowiec · Trading Terminal
+            Portfolio
           </p>
-
-          {/* Contact Links */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <a
-              href="mailto:dom@example.com"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all"
-            >
-              <Mail className="w-4 h-4" />
-              Email
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all"
-            >
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-all"
-            >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>
-          </div>
-
-          {/* Magnetize CTA Button */}
-          <div className="flex justify-center">
-            <MagnetizeButton particleCount={14} attractRadius={50}>
-              <span>Let's Talk</span>
-            </MagnetizeButton>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="w-full py-8 px-4 border-t border-white/10 text-center text-white/50 text-sm">
-        <p>
-          © {new Date().getFullYear()} Dominik Gielarowiec. All rights
-          reserved.
-        </p>
-      </footer>
+        </footer>
+      </div>
     </main>
   )
 }
