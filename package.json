@@ -17,7 +17,7 @@
     "@splinetool/react-spline": "^2.2.0",
     "framer-motion": "^10.16.0",
     "lucide-react": "^0.263.0",
-    "@radix-ui/react-slot": "^2.0.2",
+    "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.2.0"
