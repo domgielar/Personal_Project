@@ -13,28 +13,22 @@ interface Project {
 export function ProjectsPanel() {
   const projects: Project[] = [
     {
-      name: "AI Portfolio Assistant",
-      tags: ["AI", "LLM", "Python"],
-      impact: 92,
+      name: "Personal Portfolio (Bloomberg-style)",
+      tags: ["Next.js 14", "TypeScript", "Framer Motion"],
+      impact: 95,
       status: "active",
     },
     {
-      name: "Finance Dashboard",
-      tags: ["React", "TypeScript", "Data"],
-      impact: 78,
-      status: "active",
-    },
-    {
-      name: "Web3 Marketplace",
-      tags: ["Solidity", "Web3", "Blockchain"],
-      impact: 65,
+      name: "Hiring Manager Pro — HackHer 2026 Winner",
+      tags: ["Unity", "C#", "Reinforcement Learning"],
+      impact: 90,
       status: "completed",
     },
     {
-      name: "Course Scheduler App",
-      tags: ["Next.js", "Full-Stack"],
-      impact: 88,
-      status: "active",
+      name: "UDash — Hack UMass XIII",
+      tags: ["React", "TypeScript", "Google Gemini"],
+      impact: 85,
+      status: "completed",
     },
   ]
 
@@ -47,7 +41,7 @@ export function ProjectsPanel() {
       case "archived":
         return "text-yellow-400"
       default:
-        return "text-lime-400"
+        return "text-amber-400"
     }
   }
 
@@ -60,7 +54,7 @@ export function ProjectsPanel() {
       case "archived":
         return "bg-yellow-500/10 border-yellow-500/30"
       default:
-        return "bg-lime-500/10 border-lime-500/30"
+        return "bg-amber-500/10 border-amber-500/30"
     }
   }
 
@@ -74,7 +68,7 @@ export function ProjectsPanel() {
           >
             {/* Project header */}
             <div className="flex items-center justify-between mb-2">
-              <div className="text-lime-300 text-sm font-semibold">
+              <div className="text-amber-300 text-sm font-semibold">
                 {project.name}
               </div>
               <div
@@ -92,7 +86,7 @@ export function ProjectsPanel() {
                     project.impact >= 80
                       ? "bg-emerald-400"
                       : project.impact >= 60
-                        ? "bg-lime-400"
+                        ? "bg-amber-400"
                         : "bg-yellow-400"
                   }`}
                   style={{ width: `${project.impact}%` }}
@@ -105,7 +99,7 @@ export function ProjectsPanel() {
               {project.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-xs text-lime-300 bg-lime-500/10 px-2 py-0.5 rounded border border-lime-500/20"
+                  className="text-xs text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20"
                 >
                   {tag}
                 </span>

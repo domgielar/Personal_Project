@@ -6,17 +6,19 @@ import { Providers } from "./providers"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dominik Gielarowiec | AI Builder & Finance Enthusiast",
+  title: "Dominik Gielarowiec | Full-Stack Developer & CS + Econ Student",
   description:
-    "UMass CS + Econ student. Passionate about AI, finance, and building products that matter.",
+    "UMass Amherst CS + Economics student and full-stack developer building AI, fintech, and full-stack products.",
   keywords: [
     "portfolio",
     "developer",
+    "full-stack",
     "AI",
-    "finance",
-    "UMass",
+    "fintech",
+    "UMass Amherst",
     "typescript",
     "react",
+    "next.js",
   ],
 }
 

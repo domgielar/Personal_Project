@@ -1,0 +1,733 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 612. 792.]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 7819
+>>
+stream
+0.200025 w
+0 G
+BT
+/F10 18 Tf
+20.6999999999999993 TL
+0. g
+224.4599999999999795 738. Td
+(Dominik Gielarowiec) Tj
+ET
+BT
+/F9 10 Tf
+11.5 TL
+0. g
+136.4999999999999716 722. Td
+(New York, NY | dominikgielarowiec@gmail.com | LinkedIn | github.com/domgielar) Tj
+ET
+BT
+/F10 12 Tf
+13.7999999999999989 TL
+0. g
+54. 700. Td
+(EDUCATION) Tj
+ET
+0. G
+0.75 w
+54. 697. m
+558. 697. l
+S
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 683. Td
+(University of Massachusetts Amherst | B.S. in Computer Science & Economics) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+484.2899999999999636 683. Td
+(Graduating: 2028) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 670. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 670. Td
+(Related Coursework: Calculus 1, 2, 3, Linear Algebra, Macro Economics, Micro Economics, Data Structures and Algorithms,) Tj
+T* (Statistics & Probabilities | GPA 3.5) Tj
+ET
+BT
+/F10 12 Tf
+13.7999999999999989 TL
+0. g
+54. 640. Td
+(PROJECTS) Tj
+ET
+0. G
+0.75 w
+54. 637. m
+558. 637. l
+S
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 623. Td
+(UDash - Hack UMass XIII) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+490.1700000000000159 623. Td
+(November 2025) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 610. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 610. Td
+(Built with React + TypeScript + Google Gemini; added real-time order updates via web-scraping and integrated Google Maps) Tj
+T* (API for dynamic location features.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 587. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 587. Td
+(Engineered the onboarding pipeline reducing checkout flow by 30%; produced and presented a market-research deck with) Tj
+T* (competitive analysis and adoption data.) Tj
+ET
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 561. Td
+(Hiring Manager Pro - Hackathon HackHer 2026 \(Winner\)) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+496.6800000000000068 561. Td
+(February 2026) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 548. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 548. Td
+(Built a Unity \(C#\) hiring simulation using reinforcement learning concepts to generate candidates and evaluate hiring) Tj
+T* (decisions across performance, bias, and team metrics.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 525. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 525. Td
+(Created a statistical scoring system modeling team chemistry and hiring outcomes through weighted evaluation and iterative) Tj
+T* (feedback.) Tj
+ET
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 499. Td
+(Personal Portfolio - Bloomberg Style) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+490.1700000000000159 499. Td
+(November 2025) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 486. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 486. Td
+(Built a Bloomberg-style portfolio using Next.js 14, TypeScript, Tailwind, and Framer Motion, featuring a live market ticker,) Tj
+T* (terminal boot-up animation, and interactive dashboard UI.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 463. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 463. Td
+(Leveraged GitHub Copilot + Cursor for accelerated development and prompt-engineered UI refinements, producing a fully) Tj
+T* (typed, optimized, 60fps, production-ready architecture.) Tj
+ET
+BT
+/F10 12 Tf
+13.7999999999999989 TL
+0. g
+54. 433. Td
+(WORK EXPERIENCE) Tj
+ET
+0. G
+0.75 w
+54. 430. m
+558. 430. l
+S
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 416. Td
+(Cornerstone Bank - Webster, MA) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+484.0799999999999841 416. Td
+(02/2025 - Present) Tj
+ET
+BT
+/F11 10 Tf
+11.5 TL
+0. g
+54. 403. Td
+(Teller Intern -> Customer Relations Associate -> Customer Relations Specialist) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 390. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 390. Td
+(Manage client transactions and provide customer service, maintaining accuracy and compliance with banking regulations of) Tj
+T* (KYC/AML tools.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 367. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 367. Td
+(Gaining exposure to modern fintech workflows, digital banking systems, and customer-facing financial platforms.) Tj
+ET
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 352.5 Td
+(LVLnity - Remote) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+484.0799999999999841 352.5 Td
+(02/2026 - Present) Tj
+ET
+BT
+/F11 10 Tf
+11.5 TL
+0. g
+54. 339.5 Td
+(Lead Full-Stack Developer) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 326.5 Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 326.5 Td
+(Develop full-stack features using Next.js, TypeScript, and Firebase, implementing authentication and real-time data systems.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 315. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 315. Td
+(Collaborate remotely to ship product updates and improve performance through iterative development.) Tj
+ET
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 300.5 Td
+(NoCam - Remote) Tj
+ET
+BT
+/F9 10.5 Tf
+12.0749999999999993 TL
+0. g
+480.4049999999999727 300.5 Td
+(07/2023 - 09/2023) Tj
+ET
+BT
+/F11 10 Tf
+11.5 TL
+0. g
+54. 287.5 Td
+(Business Development Intern) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 274.5 Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 274.5 Td
+(Contributed to strategic initiatives to enhance user engagement and platform growth.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 263. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 263. Td
+(Supported a pre-seed raise of $400,000, collaborating with advisors and mentors who helped me build skills in go-to-market) Tj
+T* (strategy, competitive analysis, and stakeholder communication.) Tj
+ET
+BT
+/F10 10.5 Tf
+12.0749999999999993 TL
+0. g
+54. 237. Td
+(Project Destined - Remote) Tj
+ET
+BT
+/F11 10 Tf
+11.5 TL
+0. g
+54. 224. Td
+(Private Equity Intern) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 211. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 211. Td
+(Selected for a competitive commercial real estate private equity training program; underwrote live multifamily deals using the) Tj
+T* (Income, Sales Comparison, and Cost approaches to valuation.) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 188. Td
+(•) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 188. Td
+(Built underwriting models projecting Net Operating Income, capitalization rates, and investment returns; presented a final) Tj
+T* (investment recommendation to industry executives.) Tj
+ET
+BT
+/F10 12 Tf
+13.7999999999999989 TL
+0. g
+54. 158. Td
+(SKILLS) Tj
+ET
+0. G
+0.75 w
+54. 155. m
+558. 155. l
+S
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 141. Td
+(•) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 141. Td
+(Programming: ) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+129.632000000000005 141. Td
+(Python, JavaScript, CSS, HTML, API, Java, C++, SQL, Swift) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 129. Td
+(•) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 129. Td
+(Tools: ) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+93.257000000000005 129. Td
+(React, HubSpot, Git, Pandas, NumPy, OpenCV, Excel, LeanData) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 117. Td
+(•) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 117. Td
+(Concepts: ) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+109.6500000000000057 117. Td
+(OOP, Data Structures, Algorithms, CRM Operations, AWS) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+54. 105. Td
+(•) Tj
+ET
+BT
+/F10 9.7 Tf
+11.1549999999999976 TL
+0. g
+66. 105. Td
+(Languages: ) Tj
+ET
+BT
+/F9 9.7 Tf
+11.1549999999999976 TL
+0. g
+116.1490000000000009 105. Td
+(English, Polish \(Fluent\), Spanish \(Elementary\)) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260728133133-04'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000007991 00000 n 
+0000009808 00000 n 
+0000000015 00000 n 
+0000000120 00000 n 
+0000008048 00000 n 
+0000008173 00000 n 
+0000008303 00000 n 
+0000008436 00000 n 
+0000008573 00000 n 
+0000008696 00000 n 
+0000008825 00000 n 
+0000008957 00000 n 
+0000009093 00000 n 
+0000009221 00000 n 
+0000009348 00000 n 
+0000009477 00000 n 
+0000009610 00000 n 
+0000009712 00000 n 
+0000010056 00000 n 
+0000010142 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <6361C79A996550BDC5EB528B3F86A0FA> <6361C79A996550BDC5EB528B3F86A0FA> ]
+>>
+startxref
+10246
+%%EOF
